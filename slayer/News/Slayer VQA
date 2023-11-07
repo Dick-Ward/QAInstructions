@@ -1,0 +1,35 @@
+*VQA Instructions*
+
+Follow the links below to see each of the variants of Slayer. 
+
+ 
+
+V1 - One Month
+
+[https://nsoslayer-testbranch.sbx.nytimes.com/subscription/cooking?units=landingPageHeader,ACT_CONV_STAY_LONGER_AT_YOUR_EXISTING_RATE_(SLAYER)_237,v1_slayer_OneMonth]
+
+ 
+
+V2 - Three Months
+
+[https://nsoslayer-testbranch.sbx.nytimes.com/subscription/cooking?units=landingPageHeader,ACT_CONV_STAY_LONGER_AT_YOUR_EXISTING_RATE_(SLAYER)_237,v2_slayer_ThreeMonths]
+
+ 
+
+V3 - Six Months
+
+[https://nsoslayer-testbranch.sbx.nytimes.com/subscription/cooking?units=landingPageHeader,ACT_CONV_STAY_LONGER_AT_YOUR_EXISTING_RATE_(SLAYER)_237,v3_slayer_SixMonths]
+
+ 
+
+Notes:
+
+Legal is present in the Figma, but is not required when no offer is present.  This can be removed from the figma (if possible)
+
+ 
+
+The copy differs from the Figma, and the Figma will need to be changed (if possible) to reflect this. The price subtext now says the following: 
+
+ 
+Billed at your current rate for the first 4 weeks.
+Billed at your current rate for the first 12 weeks.Billed at your current rate for the first 24 weeks.

@@ -1,0 +1,82 @@
+h3. QA Instructions:
+
+Visit www.stg.nytimes.com and log in as one of the users below. Then visit the appropriate URLS. Testing needs to be done on staging because we are unable to create international users at various pricepoints in production.
+
+Please confirm the copy on each version, and the offer code in the URL. The offer codes can be found in the "News Only Offers" tab [in this spreadsheet|https://docs.google.com/spreadsheets/d/1o5-NfASYplgyOIxIGoDGyAW3rtIviV67F36oDi_zlfc/edit?usp=sharing]
+
+[Figma|https://www.figma.com/file/NqNrvUqfNvCLhnIOEeinkp/Stay-at-Your-Rate?type=design&node-id=171-18436&mode=design&t=GMBrZc4PbVsOqrk3-0]
+
+Note: [VQA ticket|https://jira.nyt.net/browse/NSO-2922] is complete and includes some changes to the original Figma. Any VQA issues should be considered out of scope for this ticket.
+*Users*
+
+$1/wk - qateam_testing+mStND445@nytimes.com
+
+$2/wk - qateam_testing+KKhhb445@nytimes.com
+
+$4.25/wk (US Only) - qateam_testing+giYOp445@nytimes.com
+
+$5.00/wk (AU/CA Only) - qateam_testing+yTPUU445@nytimes.com
+
+password: test123
+
+*US* ($1, $2, and $4.25 users)
+
+One Month Cooking
+{code:java}
+https://www.stg.nytimes.com/subscription/cooking?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=1_one_month{code}
+Three Months Cooking
+{code:java}
+https://www.stg.nytimes.com/subscription/cooking?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=2_three_months{code}
+Six Months Cooking
+{code:java}
+https://www.stg.nytimes.com/subscription/cooking?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=3_six_months{code}
+One Month games
+{code:java}
+https://www.stg.nytimes.com/subscription/games?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=1_one_month{code}
+Three Months games
+{code:java}
+https://www.stg.nytimes.com/subscription/games?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=2_three_months{code}
+Six Months games
+{code:java}
+https://www.stg.nytimes.com/subscription/games?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=3_six_months{code}
+*{*}AU/CA{*}* ($1 and $5 users)
+
+One Month Cooking
+`
+{code:java}
+https://www.stg.nytimes.com/subscription/cooking?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=1_one_month&country=AU{code}
+Three Months Cooking
+{code:java}
+https://www.stg.nytimes.com/subscription/cooking?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=2_three_months&country=CA{code}
+Six Months Cooking
+{code:java}
+https://www.stg.nytimes.com/subscription/cooking?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=3_six_months&country=AU{code}
+One Month Games
+{code:java}
+https://www.stg.nytimes.com/subscription/games?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=1_one_month&country=AU{code}
+Three Months Games
+{code:java}
+https://www.stg.nytimes.com/subscription/games?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=2_three_months&country=CA{code}
+Six Months Games
+{code:java}
+https://www.stg.nytimes.com/subscription/games?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=3_six_months&country=AU{code}
+*{*}UK/EU{*}* ($1 and $2 users)
+
+One Month Cooking
+{code:java}
+https://www.stg.nytimes.com/subscription/cooking?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=1_one_month&country=GB{code}
+Three Months Cooking
+{code:java}
+https://www.stg.nytimes.com/subscription/cooking?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=2_three_months&Continent=EU&country=FR{code}
+Six Months Cooking
+{code:java}
+https://www.stg.nytimes.com/subscription/cooking?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=3_six_months&country=GB{code}
+One Month Games
+{code:java}
+https://www.stg.nytimes.com/subscription/games?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=1_one_month&country=GB{code}
+Three Months Games
+{code:java}
+https://www.stg.nytimes.com/subscription/games?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=2_three_months&Continent=EU&country=FR{code}
+Six Months Games
+{code:java}
+https://www.stg.nytimes.com/subscription/games?abra-overrides=ON_slayer_duration_news_sub_standalone_lp_0623=3_six_months&country=GB{code}
